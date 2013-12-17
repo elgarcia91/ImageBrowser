@@ -1,6 +1,9 @@
-package imagebrowser;
+package imagebrowser.persistence;
 
-public class ProxyImage extends Image {
+import imagebrowser.model.Bitmap;
+import imagebrowser.model.Image;
+
+public class ProxyImage implements Image {
 
     private final ImageLoader loader;
     private Image next;
@@ -32,10 +35,9 @@ public class ProxyImage extends Image {
     }
 
     @Override
-    public Dimension getDimension() {
-        if (realImage == null) {
-            realImage = loader.load();
-        }
-        return realImage.getDimension();
+    public Bitmap getBitmap() {
+        return realImage.getBitmap();
     }
+
+    
 }

@@ -1,4 +1,4 @@
-package imagebrowser;
+package imagebrowser.control;
 
 public interface Command {
 

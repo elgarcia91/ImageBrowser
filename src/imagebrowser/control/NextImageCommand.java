@@ -1,4 +1,6 @@
-package imagebrowser;
+package imagebrowser.control;
+
+import imagebrowser.ui.ImageViewer;
 
 public class NextImageCommand implements Command{
     private final ImageViewer viewer;

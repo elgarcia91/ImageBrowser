@@ -1,4 +1,6 @@
-package imagebrowser;
+package imagebrowser.control;
+
+import imagebrowser.ui.ImageViewer;
 
 public class PrevImageCommand implements Command {
 

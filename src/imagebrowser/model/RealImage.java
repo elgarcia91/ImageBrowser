@@ -1,11 +1,12 @@
-package imagebrowser;
+package imagebrowser.model;
 
-public class RealImage extends Image{
-    private final Dimension dimension;
+public class RealImage implements Image{
+    private final Bitmap bitmap;
 
-    public RealImage(Dimension dimension) {
-        this.dimension = dimension;
+    public RealImage(Bitmap bitmap) {
+        this.bitmap = bitmap;
     }
+
 
     @Override
     public void setNext(Image image) {
@@ -24,9 +25,10 @@ public class RealImage extends Image{
     public Image getPrev() {
         return null;
     }
-
+    
     @Override
-    public Dimension getDimension() {
-        return dimension;
+    public Bitmap getBitmap(){
+        return bitmap;
     }
+
 }
