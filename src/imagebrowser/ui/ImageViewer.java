@@ -8,5 +8,8 @@ public interface ImageViewer {
 
     public Image getImage();
 
+    public void showNext();
+
+    public void showPrev();
     //public void refresh();???
 }
