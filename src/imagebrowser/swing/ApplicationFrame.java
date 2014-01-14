@@ -15,7 +15,7 @@ public class ApplicationFrame extends JFrame {
     public ApplicationFrame(ActionListenerFactory factory) {
         super("Image Viewer");
         this.factory = factory;
-        this.setSize(800, 600);
+        this.setSize(1024, 700);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.createComponents();
@@ -27,7 +27,7 @@ public class ApplicationFrame extends JFrame {
     }
 
     private void createComponents() {
-        this.add(createImagePanel(), BorderLayout.CENTER);
+        this.add(createImagePanel());
         this.add(createToolbar(), BorderLayout.SOUTH);
     }
 
@@ -39,8 +39,8 @@ public class ApplicationFrame extends JFrame {
 
     private JPanel createToolbar() {
         JPanel panel = new JPanel();
-        panel.add(createButton("Next"));
         panel.add(createButton("Prev"));
+        panel.add(createButton("Next"));
         return panel;
     }
 
