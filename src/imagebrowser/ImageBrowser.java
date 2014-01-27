@@ -1,21 +1,15 @@
 package imagebrowser;
 
-import imagebrowser.ui.ImageViewer;
 import imagebrowser.swing.ApplicationFrame;
 import imagebrowser.swing.ActionListenerFactory;
-import imagebrowser.swing.ImagePanel;
 import imagebrowser.control.Command;
 import imagebrowser.control.NextImageCommand;
 import imagebrowser.control.PrevImageCommand;
 import imagebrowser.model.Image;
-import imagebrowser.persistence.FileImageLoader;
 import imagebrowser.persistence.FileListLoader;
 import imagebrowser.persistence.ListLoader;
-import imagebrowser.persistence.ProxyImage;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
